@@ -1,12 +1,128 @@
-.top {
+* {
+    box-sizing: border-box;
+}
+
+.fixo {
     width: 100%;
-    height: 60px;
-    background-color: red;
+    position: fixed;
+}
+
+.top {
+    height: 54px;
+    margin-left: 216.38px;
+    margin-right: 218.75px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo {
+    display: flex;
+}
+
+.logo > img {
+    border-left: 1px solid #DBDBDB;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    padding-left: 11.37px;
+}
+
+.logo > ion-icon {
+    font-size: 19.25px;
+    margin-top: 20.58px;
+    margin-bottom: 22.19px;
+    margin-right: 11.37px;
+    
+}
+
+.search-bar > input {
+    width: 215px;
+    height: 28px;
+    background: #FAFAFA;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 13px 0;
+}
+
+.profile-icons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.profile-icons > img {
+    width: 18px;
+    height: 18px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.profile-icons > ion-icon {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.borda-horizontal {
+    width: 100%;
+    height: 1px;
+    background: #DBDBDB;
     margin-bottom: 34px;
 }
 
 .main {
     width: 100%;
     height: 2000px;
-    background-color: green;
+}
+
+@media screen and (max-width: 935px) and (min-width: 614px) {
+    .top {
+        height: 54px;
+        margin: auto 18px auto 21.37px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 613px) {
+    .top {
+        height: 54px;
+        margin: auto 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 21.37px;
+        width: 58%;
+    }
+
+    .logo > img {
+        border-left: none;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        padding-left: 0;
+    }
+    
+    .logo > ion-icon {
+        font-size: 19.25px;
+        margin-top: 20.58px;
+        margin-bottom: 22.19px;
+        margin-right: 0;
+        
+    }
+
+    .search-bar > input {
+        display: none;
+    }
+
+    .profile-icons {
+       margin-right: 18px;
+    }
+    .profile-icons > ion-icon {
+        display: none;
+    }  
 }
